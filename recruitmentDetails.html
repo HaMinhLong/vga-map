@@ -23,15 +23,23 @@
           custom-padding
           d-flex
           align-items-center
-          justify-content-between
+          justify-content-end justify-content-md-end justify-content-xl-between
         "
       >
         <a href="./index.html" class="logo-page">
           <img src="/static/images/home/logo-page.svg" alt="logo-page" />
         </a>
+        <a href="./index.html" class="logo-page-mobile"
+          ><img src="/static/images/home/logo-page-mobile.png" alt=""
+        /></a>
         <div class="navigation-locate-box">
           <ul
-            class="navigation d-flex justify-content-between align-items-center"
+            class="
+              navigation
+              d-flex
+              justify-content-center justify-content-md-around
+              align-items-center
+            "
           >
             <li class="d-flex flex-column align-items-center">
               <img src="/static/images/home/home-icon.svg" alt="" /><a
@@ -85,7 +93,7 @@
     <section class="recruitment-details-page container-box">
       <div class="container-fluid">
         <div class="row">
-          <div class="details-box col-12 col-md-6 col-xl-6">
+          <div class="details-box col-12 col-md-12 col-xl-6">
             <div class="box">
               <ul>
                 <li class="d-flex">
@@ -114,7 +122,7 @@
               <img src="/static/images/recruitment/image-1.png" alt="" />
             </div>
           </div>
-          <div class="details-box col-12 col-md-6 col-xl-6">
+          <div class="details-box col-12 col-md-12 col-xl-6">
             <div class="box">
               <div class="container-fluid">
                 <div class="row">
@@ -144,18 +152,16 @@
                       </li>
                     </ul>
                   </div>
-                  <div class="col-4">
-                    <img src="/static/images/recruitment/image-2.png" alt="" />
-                  </div>
                 </div>
               </div>
+              <img src="/static/images/recruitment/image-2.png" alt="" />
             </div>
           </div>
           <div class="details-box col-12 col-md-12 col-xl-12">
             <div class="box">
               <div class="container-fluid">
                 <div class="row">
-                  <div class="col-8 job-descriptions">
+                  <div class="col-12 col-xl-8 job-descriptions">
                     <div class="descriptions">
                       <p class="details-title">Yêu cầu công việc</p>
                       <p>
@@ -241,7 +247,7 @@
                     </div>
                     <button type="button" class="button-red">Nộp hồ sơ</button>
                   </div>
-                  <div class="col-4 image-descriptions">
+                  <div class="col-0 col-xl-4 image-descriptions">
                     <img src="/static/images/recruitment/image-3.png" alt="" />
                   </div>
                 </div>
@@ -256,7 +262,7 @@
       <div class="container-box">
         <div class="container-fluid">
           <div class="row">
-            <div class="footer-contact col-12 col-md-5">
+            <div class="footer-contact col-12 col-md-12 col-lg-5 col-xl-5">
               <img src="/static/images/home/logo-page.svg" alt="" />
               <p class="company-name">Công ty Map3D</p>
               <p class="address">
@@ -266,7 +272,7 @@
               <p class="phone">Số điện thoại:0963339657</p>
               <p class="email">Email: nbm@gmail.com</p>
             </div>
-            <ul class="footer-categories col-12 col-md-2 offset-md-1">
+            <ul class="footer-categories col-12 col-md-0 col-xl-2 offset-md-1">
               <li>
                 <img src="/static/images/home/home-icon.svg" alt="" /><a
                   href="./index.html"
@@ -298,42 +304,50 @@
                 >
               </li>
             </ul>
-            <div class="more-information col-12 col-md-3 offset-md-1">
-              <img
-                class="informated"
-                src="/static/images/home/da-thong-bao.png"
-                alt=""
-              />
-              <div class="link">
-                <p>Liên kết</p>
-                <div class="container-fluid">
-                  <div class="row">
-                    <img
-                      class="col-3"
-                      src="/static/images/home/facebook.png"
-                      alt=""
-                    />
-                    <img
-                      class="col-3"
-                      src="/static/images/home/instagram.png"
-                      alt=""
-                    /><img
-                      class="col-3"
-                      src="/static/images/home/youtube.png"
-                      alt=""
-                    /><img
-                      class="col-3"
-                      src="/static/images/home/google.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
+            <div
+              class="
+                more-information
+                col-12 col-md-12 col-lg-3 col-xl-3
+                offset-lg-4 offset-xl-1
+              "
+            >
+              <div>
                 <img
-                  class="install-link"
-                  src="/static/images/home/install-link.png"
+                  class="informated"
+                  src="/static/images/home/da-thong-bao.png"
                   alt=""
                 />
+                <div class="link">
+                  <p>Liên kết</p>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/facebook.png"
+                        alt=""
+                      />
+                      <img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/instagram.png"
+                        alt=""
+                      /><img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/youtube.png"
+                        alt=""
+                      /><img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+              <img
+                class="install-link"
+                src="/static/images/home/install-link.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

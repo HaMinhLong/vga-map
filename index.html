@@ -23,17 +23,25 @@
           custom-padding
           d-flex
           align-items-center
-          justify-content-between
+          justify-content-end justify-content-md-end justify-content-xl-between
         "
       >
         <a href="./index.html" class="logo-page">
           <img src="/static/images/home/logo-page.svg" alt="logo-page" />
         </a>
+        <a href="./index.html" class="logo-page-mobile"
+          ><img src="/static/images/home/logo-page-mobile.png" alt=""
+        /></a>
         <div class="navigation-locate-box">
           <ul
-            class="navigation d-flex justify-content-between align-items-center"
+            class="
+              navigation
+              d-flex
+              justify-content-center justify-content-md-around
+              align-items-center
+            "
           >
-            <li class="d-flex flex-column align-items-center">
+            <li class="active d-flex flex-column align-items-center">
               <img src="/static/images/home/home-icon.svg" alt="" /><a
                 href="./index.html"
                 >Trang chủ</a
@@ -78,6 +86,11 @@
         alt="banner-home"
         class="image-banner"
       />
+      <img
+        src="/static/images/home/banner-mobile.png"
+        alt="banner-home"
+        class="image-banner-mobile"
+      />
       <img src="/static/images/home/la-ban.png" alt="" class="la-ban" />
       <img src="/static/images/home/kinh-lup.png" alt="" class="kinh-lup" />
       <div class="phone-banner">
@@ -108,13 +121,24 @@
           </div>
         </div>
       </div>
+      <ul class="button-group">
+        <li>
+          <img src="/static/images/home/increment.svg" alt="" />
+        </li>
+        <li>
+          <img src="/static/images/home/decrement.svg" alt="" />
+        </li>
+        <li>
+          <img src="/static/images/home/vi-tri-hien-tai.svg" alt="" />
+        </li>
+      </ul>
     </section>
 
     <section class="introduce-home container-box">
       <p class="title-type-1">Tính năng nổi bật của công nghệ map 3D</p>
       <div class="features container-fluid">
         <div class="row">
-          <div class="feature col-12 col-sm-3 col-md-3">
+          <div class="feature col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="image-box">
               <img src="/static/images/home/feature-1.png" alt="" />
             </div>
@@ -130,7 +154,7 @@
               </p>
             </div>
           </div>
-          <div class="feature col-12 col-sm-3 col-md-3">
+          <div class="feature col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="image-box">
               <img src="/static/images/home/feature-2.png" alt="" />
             </div>
@@ -146,7 +170,7 @@
               </p>
             </div>
           </div>
-          <div class="feature col-12 col-sm-3 col-md-3">
+          <div class="feature col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="image-box">
               <img src="/static/images/home/feature-3.png" alt="" />
             </div>
@@ -162,7 +186,7 @@
               </p>
             </div>
           </div>
-          <div class="feature col-12 col-sm-3 col-md-3">
+          <div class="feature col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
             <div class="image-box">
               <img src="/static/images/home/feature-4.png" alt="" />
             </div>
@@ -185,10 +209,11 @@
     <section class="benefits-maps container-box">
       <div class="container-fluid">
         <div class="row">
-          <div class="image-box col-12 col-md-7 col-xl-7">
+          <div class="image-box col-12 col-md-12 col-lg-7 col-xl-7">
+            <p class="title-type-1">Lợi ích của công nghệ Map3d mang lại</p>
             <img src="/static/images/home/loi-ich.png" alt="" />
           </div>
-          <div class="content col-12 col-md-5 col-xl-5">
+          <div class="content col-12 col-md-12 col-lg-5 col-xl-5">
             <p class="title-type-1">Lợi ích của công nghệ Map3d mang lại</p>
             <p class="short-description">
               Giúp người xem dễ dàng hình dung tiến độ thực tế của cả dự án
@@ -223,147 +248,157 @@
     </section>
     <section class="develop-road container-box">
       <p class="title-type-1">Chặng đường phát triển map 3d</p>
-      <div class="years">
-        <div class="year">
-          <div
-            class="image-box d-flex align-items-center justify-content-center"
-          >
-            <img src="/static/images/home/year-2017.png" alt="" />
+      <div>
+        <div class="years">
+          <div class="year">
+            <div
+              class="image-box d-flex align-items-center justify-content-center"
+            >
+              <img src="/static/images/home/year-2017.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Năm 2017</p>
+              <p class="short-description">
+                Thừa hành ý tưởng và thành lập nhóm IT nghiên cứu mở rộng
+              </p>
+            </div>
           </div>
-          <div class="content">
-            <p class="bold-500">Năm 2017</p>
-            <p class="short-description">
-              Thừa hành ý tưởng và thành lập nhóm IT nghiên cứu mở rộng
-            </p>
+          <div class="year">
+            <div
+              class="image-box d-flex align-items-center justify-content-center"
+            >
+              <img src="/static/images/home/year-2018.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Năm 2018</p>
+              <p class="short-description">Thành lập nhóm nghiên cứu</p>
+            </div>
           </div>
-        </div>
-        <div class="year">
-          <div
-            class="image-box d-flex align-items-center justify-content-center"
-          >
-            <img src="/static/images/home/year-2018.png" alt="" />
+          <div class="year">
+            <div
+              class="image-box d-flex align-items-center justify-content-center"
+            >
+              <img src="/static/images/home/year-2019.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Năm 2019</p>
+              <p class="short-description">
+                Mở rộng quy mô, phát triển, xây dựng hệ thống
+              </p>
+            </div>
           </div>
-          <div class="content">
-            <p class="bold-500">Năm 2018</p>
-            <p class="short-description">Thành lập nhóm nghiên cứu</p>
+          <div class="year">
+            <div
+              class="image-box d-flex align-items-center justify-content-center"
+            >
+              <img src="/static/images/home/year-2020.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Năm 2020</p>
+              <p class="short-description">
+                Phát triển hệ thống trên Smartphone
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="year">
-          <div
-            class="image-box d-flex align-items-center justify-content-center"
-          >
-            <img src="/static/images/home/year-2019.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Năm 2019</p>
-            <p class="short-description">
-              Mở rộng quy mô, phát triển, xây dựng hệ thống
-            </p>
-          </div>
-        </div>
-        <div class="year">
-          <div
-            class="image-box d-flex align-items-center justify-content-center"
-          >
-            <img src="/static/images/home/year-2020.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Năm 2020</p>
-            <p class="short-description">Phát triển hệ thống trên Smartphone</p>
-          </div>
-        </div>
-        <div class="year">
-          <div
-            class="image-box d-flex align-items-center justify-content-center"
-          >
-            <img src="/static/images/home/year-2021.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Năm 2021</p>
-            <p class="short-description">Đoạt giải tiên phong trong lĩnh vực</p>
+          <div class="year">
+            <div
+              class="image-box d-flex align-items-center justify-content-center"
+            >
+              <img src="/static/images/home/year-2021.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Năm 2021</p>
+              <p class="short-description">
+                Đoạt giải tiên phong trong lĩnh vực
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="develop-team container-box">
       <p class="title-type-1">Đội ngũ phát triển</p>
-      <div class="teams">
-        <div class="team">
-          <div class="image-box">
-            <img src="/static/images/home/profile-image.png" alt="" />
+      <div>
+        <div class="teams">
+          <div class="team">
+            <div class="image-box">
+              <img src="/static/images/home/profile-image.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Mr. A</p>
+              <p>Chủ tịch HĐQT</p>
+              <p class="short-description">
+                Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
+              </p>
+            </div>
           </div>
-          <div class="content">
-            <p class="bold-500">Mr. A</p>
-            <p>Chủ tịch HĐQT</p>
-            <p class="short-description">
-              Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
-            </p>
+          <div class="team">
+            <div class="image-box">
+              <img src="/static/images/home/profile-image.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Mr. A</p>
+              <p>Phó chủ tịch</p>
+              <p class="short-description">
+                Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="team">
-          <div class="image-box">
-            <img src="/static/images/home/profile-image.png" alt="" />
+          <div class="team">
+            <div class="image-box">
+              <img src="/static/images/home/profile-image.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Mr. A</p>
+              <p>Phó chủ tịch</p>
+              <p class="short-description">
+                Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
+              </p>
+            </div>
           </div>
-          <div class="content">
-            <p class="bold-500">Mr. A</p>
-            <p>Phó chủ tịch</p>
-            <p class="short-description">
-              Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
-            </p>
+          <div class="team">
+            <div class="image-box">
+              <img src="/static/images/home/profile-image.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Mr. A</p>
+              <p>Trưởng nhóm</p>
+              <p class="short-description">
+                Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="team">
-          <div class="image-box">
-            <img src="/static/images/home/profile-image.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Mr. A</p>
-            <p>Phó chủ tịch</p>
-            <p class="short-description">
-              Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
-            </p>
-          </div>
-        </div>
-        <div class="team">
-          <div class="image-box">
-            <img src="/static/images/home/profile-image.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Mr. A</p>
-            <p>Trưởng nhóm</p>
-            <p class="short-description">
-              Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
-            </p>
-          </div>
-        </div>
-        <div class="team">
-          <div class="image-box">
-            <img src="/static/images/home/profile-image.png" alt="" />
-          </div>
-          <div class="content">
-            <p class="bold-500">Mr. A</p>
-            <p>Trưởng nhóm phát triển dự án</p>
-            <p class="short-description">
-              Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
-            </p>
+          <div class="team">
+            <div class="image-box">
+              <img src="/static/images/home/profile-image.png" alt="" />
+            </div>
+            <div class="content">
+              <p class="bold-500">Mr. A</p>
+              <p>Trưởng nhóm phát triển dự án</p>
+              <p class="short-description">
+                Thành viên HĐQT Map3D Group, nguyên TGĐ công ty A.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="affiliate-partner container-box">
       <p class="title-type-1">Đối tác liên kết</p>
-      <div class="partners">
-        <img class="partner" src="/static/images/home/tiki.png" alt="" />
-        <img class="partner" src="/static/images/home/grab.png" alt="" />
-        <img class="partner" src="/static/images/home/ghn.png" alt="" />
-        <img
-          class="partner"
-          src="/static/images/home/giao-hang-tiet-kiem.png"
-          alt=""
-        />
-        <img class="partner" src="/static/images/home/baemin.png" alt="" />
-        <img class="partner" src="/static/images/home/now.png" alt="" />
-        <img class="partner" src="/static/images/home/shopee.png" alt="" />
+      <div>
+        <div class="partners">
+          <img class="partner" src="/static/images/home/tiki.png" alt="" />
+          <img class="partner" src="/static/images/home/grab.png" alt="" />
+          <img class="partner" src="/static/images/home/ghn.png" alt="" />
+          <img
+            class="partner"
+            src="/static/images/home/giao-hang-tiet-kiem.png"
+            alt=""
+          />
+          <img class="partner" src="/static/images/home/baemin.png" alt="" />
+          <img class="partner" src="/static/images/home/now.png" alt="" />
+          <img class="partner" src="/static/images/home/shopee.png" alt="" />
+        </div>
       </div>
     </section>
     <section class="customer-evaluates container-box custom-padding">
@@ -415,7 +450,7 @@
       <div class="container-box">
         <div class="container-fluid">
           <div class="row">
-            <div class="footer-contact col-12 col-md-5">
+            <div class="footer-contact col-12 col-md-12 col-lg-5 col-xl-5">
               <img src="/static/images/home/logo-page.svg" alt="" />
               <p class="company-name">Công ty Map3D</p>
               <p class="address">
@@ -425,7 +460,7 @@
               <p class="phone">Số điện thoại:0963339657</p>
               <p class="email">Email: nbm@gmail.com</p>
             </div>
-            <ul class="footer-categories col-12 col-md-2 offset-md-1">
+            <ul class="footer-categories col-12 col-md-0 col-xl-2 offset-md-1">
               <li>
                 <img src="/static/images/home/home-icon.svg" alt="" /><a
                   href="./index.html"
@@ -457,42 +492,50 @@
                 >
               </li>
             </ul>
-            <div class="more-information col-12 col-md-3 offset-md-1">
-              <img
-                class="informated"
-                src="/static/images/home/da-thong-bao.png"
-                alt=""
-              />
-              <div class="link">
-                <p>Liên kết</p>
-                <div class="container-fluid">
-                  <div class="row">
-                    <img
-                      class="col-3"
-                      src="/static/images/home/facebook.png"
-                      alt=""
-                    />
-                    <img
-                      class="col-3"
-                      src="/static/images/home/instagram.png"
-                      alt=""
-                    /><img
-                      class="col-3"
-                      src="/static/images/home/youtube.png"
-                      alt=""
-                    /><img
-                      class="col-3"
-                      src="/static/images/home/google.png"
-                      alt=""
-                    />
-                  </div>
-                </div>
+            <div
+              class="
+                more-information
+                col-12 col-md-12 col-lg-3 col-xl-3
+                offset-lg-4 offset-xl-1
+              "
+            >
+              <div>
                 <img
-                  class="install-link"
-                  src="/static/images/home/install-link.png"
+                  class="informated"
+                  src="/static/images/home/da-thong-bao.png"
                   alt=""
                 />
+                <div class="link">
+                  <p>Liên kết</p>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/facebook.png"
+                        alt=""
+                      />
+                      <img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/instagram.png"
+                        alt=""
+                      /><img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/youtube.png"
+                        alt=""
+                      /><img
+                        class="col-3 col-md-3 col-lg-3 col-xl-3"
+                        src="/static/images/home/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
+              <img
+                class="install-link"
+                src="/static/images/home/install-link.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

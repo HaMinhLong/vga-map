@@ -1,0 +1,1092 @@
+$color: #4f58aa;
+$blandColor: #c8cce6;
+$boldColor: #2c2b71;
+$title1: #00abfd;
+$title2: #ac41f2;
+$buttonRed: #d40005;
+$button2: linear-gradient(
+  92.84deg,
+  #ff003e 2.45%,
+  #ff003e 51.06%,
+  #ec2f5d 99.66%
+);
+$red: linear-gradient(
+  59.46deg,
+  #951531 21.39%,
+  #991832 22.47%,
+  #b4293f 31.22%,
+  #cb3749 40.92%,
+  #dd4050 51.99%,
+  #ea4654 65.57%,
+  #ef4956 89.04%
+);
+$black: #000;
+$white: #fff;
+$gradient1: linear-gradient(111.78deg, #8d5fff -7.18%, #070770 95.56%);
+$gradient2: linear-gradient(111.78deg, #4f58aa -7.18%, #2c2b71 95.56%);
+
+@media (max-width: 1440px) {
+  .title-type-1 {
+    font-size: 22px;
+  }
+  .article-title,
+  .recruitment-title {
+    font-size: 16px;
+  }
+  header {
+    height: 90px;
+    .logo-page {
+      img {
+        width: 90px;
+      }
+    }
+    .navigation-locate-box {
+      .navigation {
+        li {
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+  }
+  .banner-home {
+    .la-ban {
+      left: 80px;
+      width: 250px;
+      height: 150px;
+    }
+    .kinh-lup {
+      left: 380px;
+      width: 200px;
+      height: 90px;
+    }
+    .phone-banner {
+      right: 80px;
+      width: 250px;
+      height: 400px;
+      .box {
+        top: 23px;
+        left: 2px;
+        width: 247px;
+        height: 351px;
+        .box-image {
+          bottom: -15px;
+          width: 30px;
+          height: 30px;
+          img {
+            transform: scale(0.6);
+          }
+        }
+        .box-image.increment {
+          left: calc(50% - 20px);
+        }
+        .box-image.decrement {
+          left: calc(50% + 20px);
+        }
+      }
+    }
+  }
+  footer {
+    .footer-contact {
+      img {
+        width: 110px;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .container-box {
+    width: calc(87.3% + 30px);
+  }
+  .bread-crumb {
+    margin-top: 110px;
+  }
+  header {
+    background: $white;
+    box-shadow: 0px 3px 8px rgba(79, 88, 170, 0.4);
+    height: 70px;
+    justify-content: flex-end;
+    .logo-page {
+      display: none;
+    }
+    .logo-page-mobile {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .navigation-locate-box {
+      .navigation {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        background: $color;
+        padding: 0px 8px;
+        li {
+          width: 20%;
+          margin-right: 0px;
+          height: 53px;
+          padding-top: 2px;
+          img {
+            width: 25px;
+            height: 25px;
+          }
+          a {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+          }
+        }
+        li.active {
+          background: #00abfd;
+          border-radius: 10px;
+        }
+      }
+      .locate {
+        span {
+          color: $black;
+        }
+      }
+    }
+  }
+  .banner-home {
+    top: 0px;
+    height: calc(100vh - 70px);
+    .image-banner {
+      object-fit: cover;
+      object-position: 43% 100%;
+    }
+    .la-ban {
+      left: 50px;
+      width: 250px;
+      bottom: 65px;
+    }
+    .kinh-lup {
+      left: 50px;
+      bottom: 250px;
+      width: 150px;
+      height: 70px;
+    }
+    .phone-banner {
+      display: none;
+    }
+    .button-group {
+      display: initial;
+      position: absolute;
+      bottom: 65px;
+      right: 50px;
+      li {
+        margin-bottom: 16px !important;
+        list-style: none;
+        img {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .benefits-maps {
+    .content {
+      .title-type-1 {
+        line-height: 36px;
+      }
+    }
+  }
+  .send-email-box {
+    form {
+      height: 50px;
+      .button-red {
+        height: 35px;
+        padding: 0px 40px;
+      }
+    }
+  }
+  .develop-road {
+    width: 100%;
+    > div {
+      overflow-x: scroll;
+      .years {
+        width: 1350px;
+        margin-bottom: 15px;
+        background-position: 120px 50px;
+      }
+    }
+  }
+  .develop-team {
+    margin-top: 50px;
+    width: 100%;
+    > div {
+      overflow-x: scroll;
+      height: 100%;
+      .teams {
+        width: 1350px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  .affiliate-partner {
+    width: 100%;
+    > div {
+      overflow-x: scroll;
+      .partners {
+        margin-bottom: 15px;
+        width: 1350px;
+      }
+    }
+  }
+  .customer-evaluates {
+    margin-top: 50px;
+    .evaluates {
+      .evaluate {
+        &:nth-child(1),
+        &:nth-child(3) {
+          display: none;
+        }
+        &:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  footer {
+    margin-bottom: 64px;
+    .footer-categories {
+      display: none;
+    }
+    .more-information {
+      .link {
+        margin-top: 16px;
+        .row {
+          margin-top: 16px;
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .descriptions {
+          display: none;
+        }
+        .descriptions.mobile {
+          display: inline-block;
+          margin-top: 16px;
+        }
+        .details {
+          .box {
+            &:nth-child(2) {
+              left: 270px;
+            }
+            &:nth-child(3) {
+              right: 280px;
+            }
+            &:nth-child(4) {
+              left: 305px;
+            }
+          }
+        }
+      }
+      .image-box {
+        top: 0;
+        height: 700px;
+        margin-top: 36px;
+        .image-child {
+          height: 484px;
+        }
+        .mo {
+          height: 509px;
+        }
+      }
+    }
+  }
+  .introduce-page.two {
+    .content {
+      .details {
+        img {
+          width: 355px;
+          height: 272px;
+        }
+      }
+    }
+  }
+  .recruitment-details-page {
+    .details-box {
+      margin-bottom: 20px;
+      .box {
+        .image-descriptions {
+          display: none;
+        }
+      }
+    }
+  }
+  .contact-page {
+    form {
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .title-type-1 {
+    font-size: 20px;
+  }
+  .introduce-home {
+    margin-top: 36px;
+    .features {
+      .feature {
+        .content {
+          .short-description {
+            height: 192px;
+          }
+        }
+      }
+    }
+  }
+  .benefits-maps {
+    margin-top: 54px;
+    .image-box {
+      .title-type-1 {
+        display: initial;
+        text-align: center;
+      }
+      img {
+        margin-top: 16px;
+      }
+    }
+    .content {
+      margin-top: 48px;
+      .title-type-1 {
+        display: none;
+      }
+      .button-red {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  .send-email-box {
+    margin-top: 20px;
+  }
+  .develop-road {
+    margin-top: 36px;
+  }
+  .develop-team {
+    margin-top: 36px;
+  }
+  .affiliate-partner {
+    margin-top: 45px;
+  }
+  .customer-evaluates {
+    margin-top: 36px;
+  }
+  footer {
+    margin-top: 36px;
+    .more-information {
+      margin-top: 36px;
+      display: flex;
+      justify-content: space-between;
+      .install-link {
+        margin-top: 0px;
+        height: 80px;
+      }
+    }
+  }
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .details {
+          .box {
+            &:nth-child(2) {
+              left: 162px;
+            }
+            &:nth-child(3) {
+              right: 173px;
+            }
+            &:nth-child(4) {
+              left: 198px;
+            }
+          }
+        }
+      }
+      .image-box {
+        height: 467px;
+        .image-child {
+          height: 315px;
+        }
+        .mo {
+          height: 335px;
+        }
+      }
+    }
+  }
+  .introduce-page.two {
+    margin-top: 36px;
+    .content {
+      .details {
+        margin-top: 16px;
+        img {
+          width: 100%;
+          height: 300px;
+        }
+        .box-type-2 {
+          p {
+            &:nth-child(1) {
+              cursor: pointer;
+            }
+          }
+          .short-description {
+            display: none;
+          }
+          img {
+            display: initial;
+            width: 14px;
+            height: 7px;
+            position: relative;
+          }
+          &:nth-child(2) {
+            top: 267px;
+            left: 29px;
+            img {
+              left: 105px;
+            }
+            p {
+              &:nth-child(1) {
+                .circle-icon {
+                  top: -13px;
+                  right: 29px;
+                }
+                .circle-icon::after {
+                  transform: rotate(90deg);
+                  top: -28px;
+                  left: -20px;
+                }
+              }
+            }
+          }
+          &:nth-child(3) {
+            img {
+              left: 50%;
+              transform: translateX(-50%);
+            }
+          }
+          &:nth-child(4) {
+            top: 267px;
+            right: 34px;
+            img {
+              left: 40px;
+            }
+            p {
+              &:nth-child(1) {
+                .circle-icon {
+                  top: -13px;
+                  left: 42px;
+                }
+                .circle-icon::after {
+                  transform: rotate(90deg);
+                  top: -28px;
+                  left: -21px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .details-mobile {
+        display: initial;
+        .title-choose {
+          text-align: center;
+          font-weight: 500;
+        }
+        .short-description-choose {
+          margin-top: 8px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .article-title,
+  .recruitment-title {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .article-title {
+    height: 24px;
+  }
+  .recruitment-title {
+    height: 48px;
+  }
+  .bread-crumb {
+    margin-top: 84px;
+    margin-bottom: 16px;
+    a,
+    span {
+      font-size: 14px;
+    }
+  }
+  header {
+    height: 64px;
+    .navigation-locate-box {
+      .navigation {
+        height: 64px;
+        padding: 0px 8px;
+        li {
+          img {
+            width: 20px;
+            height: 21px;
+          }
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .locate {
+        img {
+          width: 34px;
+          height: 23px;
+        }
+      }
+    }
+  }
+  .banner-home {
+    top: 0;
+    height: calc(100vh - 64px);
+    .la-ban {
+      width: 128px;
+      height: 86px;
+      left: 15px;
+    }
+    .kinh-lup {
+      width: 83px;
+      height: 43px;
+      left: 15px;
+      bottom: 170px;
+    }
+    .button-group {
+      right: 15px;
+    }
+  }
+  .send-email-box {
+    padding: 16px 0px;
+    form {
+      margin-top: 20px;
+      height: 56px;
+      padding-left: 14px;
+      input {
+        font-size: 14px;
+      }
+      input::placeholder {
+        color: $black;
+      }
+      .button-red {
+        padding: 0px 30px;
+      }
+    }
+  }
+  .customer-evaluates {
+    .evaluates {
+      padding: 0px 40px;
+      height: 117px;
+      .evaluate {
+        &:nth-child(2) {
+          padding-left: 10px;
+          padding-right: 10px;
+          .image-box {
+            width: 71px;
+            height: 71px;
+          }
+          .content {
+            padding: 0;
+            margin-top: 10px;
+            width: calc(100% - 90px);
+            .person-name {
+              font-size: 16px;
+              line-height: 18px;
+            }
+            .job {
+              font-size: 12px;
+              line-height: 18px;
+            }
+            .comment {
+              font-size: 14px;
+              margin-top: 8px;
+              text-align: left;
+            }
+            .quotes-1,
+            .quotes-2 {
+              width: 18px;
+              height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .introduce-page {
+    .company-introduce {
+      margin-bottom: 31px;
+      .content {
+        .details {
+          .image-part-1 {
+            width: 306px;
+            height: 265px;
+          }
+          .box {
+            img {
+              width: 17px;
+              height: 17px;
+            }
+            p {
+              &:nth-child(2) {
+                font-size: 30px;
+                margin-top: 2px;
+                line-height: 24px;
+              }
+              &:nth-child(3) {
+                font-size: 14px;
+                margin-top: 0px;
+              }
+            }
+            &:nth-child(2) {
+              left: 119px;
+              top: 30px;
+            }
+            &:nth-child(3) {
+              right: 122px;
+              top: 86px;
+              img {
+                width: 25px;
+                height: 25px;
+              }
+            }
+            &:nth-child(4) {
+              left: 140px;
+              bottom: 26px;
+            }
+          }
+        }
+      }
+      .image-box {
+        height: 327px;
+        .image-child {
+          height: 215px;
+        }
+        .mo {
+          height: 235px;
+        }
+      }
+    }
+  }
+  .introduce-page.two {
+    .content {
+      .details {
+        img {
+          height: 260px;
+        }
+        .box-type-2 {
+          &:nth-child(2) {
+            top: 241px;
+            img {
+              left: 63px;
+            }
+          }
+          &:nth-child(4) {
+            top: 241px;
+          }
+        }
+      }
+    }
+  }
+  .article-details-page {
+    .articles {
+      .article {
+        .image-box {
+          height: 113px;
+          padding: 0;
+          img {
+            border-radius: 10px;
+          }
+        }
+        .content {
+          .date-box,
+          .short-description {
+            display: none !important;
+          }
+          .article-title {
+            height: 48px;
+            text-align: center;
+          }
+          .details {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .articles-page {
+    .articles {
+      .article {
+        display: flex;
+        .image-box {
+          width: 40%;
+          padding: 0;
+          height: 113px;
+          img {
+            border-radius: 10px;
+          }
+        }
+        .content {
+          width: 60%;
+          padding-left: 10px;
+          margin-top: 0px;
+          .date-box {
+            display: none !important;
+          }
+          .short-description {
+            margin-top: 0px;
+            height: 72px;
+          }
+          .details {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .recruitment-page {
+    .recruitment-box {
+      .recruitment {
+        .image-box {
+          height: 107px;
+          padding: 0px 15px;
+          img {
+            border-radius: 15px;
+          }
+        }
+        .content {
+          .date-v2,
+          .short-description {
+            display: none !important;
+          }
+          .details-box {
+            border-bottom: 1px solid #c4c4c4;
+            padding: 0px;
+            padding-bottom: 3px;
+          }
+        }
+      }
+    }
+  }
+  .recruitment-details-page {
+    .details-box {
+      .box {
+        padding: 16px 10px;
+        background: #ffffff;
+        box-shadow: 0px 4px 10px rgba(79, 88, 170, 0.2);
+        border-radius: 10px;
+      }
+    }
+  }
+  .contact-page {
+    .image-box {
+      height: 220px;
+    }
+    form {
+      height: 415px;
+      padding: 16px 21px;
+      .title-type-1 {
+        text-align: left;
+      }
+      input,
+      textarea {
+        height: 34px;
+        font-size: 14px;
+        border-radius: 5px;
+        box-shadow: none;
+        border: 1px solid $color;
+        margin-top: 8px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        color: $black;
+      }
+      textarea {
+        height: 110px;
+      }
+      .button-red {
+        margin-top: 16px;
+      }
+    }
+  }
+  footer {
+    .footer-contact {
+      img {
+        width: 102px;
+      }
+    }
+  }
+}
+@media (max-width: 414px) {
+  .banner-home {
+    .image-banner {
+      display: none;
+    }
+    .image-banner-mobile {
+      display: initial;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 128px);
+    }
+  }
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .details {
+          .box {
+            &:nth-child(2) {
+              left: 64px;
+            }
+            &:nth-child(3) {
+              right: 67px;
+            }
+            &:nth-child(4) {
+              left: 86px;
+            }
+          }
+        }
+      }
+      .image-box {
+        height: 256px;
+        .image-child {
+          top: 10px;
+          left: 25px;
+          width: calc(100% - 50px);
+          height: 174px;
+        }
+        .mo {
+          height: 184px;
+        }
+      }
+    }
+  }
+  .introduce-page.two {
+    overflow: hidden;
+    .content {
+      .details {
+        img {
+          height: 241px;
+        }
+        .box-type-2 {
+          &:nth-child(2) {
+            top: 227px;
+            img {
+              left: 40px;
+            }
+          }
+          &:nth-child(4) {
+            width: 40%;
+            top: 227px;
+            right: -27px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  header {
+    .navigation-locate-box {
+      .navigation {
+        li {
+          a {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .details {
+          .box {
+            &:nth-child(2) {
+              left: 47px;
+            }
+            &:nth-child(3) {
+              right: 49px;
+            }
+            &:nth-child(4) {
+              left: 69px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customer-evaluates {
+    .evaluates {
+      .evaluate {
+        &:nth-child(2) {
+          .image-box {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+          }
+          .content {
+            width: calc(100% - 70px);
+            .person-name {
+              font-size: 14px;
+              line-height: 18px;
+            }
+            .job {
+              font-size: 11px;
+            }
+            .comment {
+              font-size: 12px;
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .recruitment-details-page {
+    .details-box {
+      .box {
+        > img {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .details {
+          .box {
+            &:nth-child(2) {
+              left: 25px;
+            }
+            &:nth-child(3) {
+              right: 25px;
+            }
+            &:nth-child(4) {
+              left: 47px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .customer-evaluates {
+    .evaluates {
+      .evaluate {
+        &:nth-child(2) {
+          .content {
+            .job {
+              display: none;
+            }
+            .comment {
+              line-height: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  footer {
+    margin-bottom: 50px;
+    .more-information {
+      .install-link {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .introduce-page {
+    .company-introduce {
+      .content {
+        .details {
+          .image-part-1 {
+            width: 100%;
+          }
+          .box {
+            &:nth-child(2) {
+              left: 25px;
+            }
+            &:nth-child(3) {
+              right: 25px;
+            }
+            &:nth-child(4) {
+              left: 47px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .introduce-page.two {
+    overflow: hidden;
+    .content {
+      .details {
+        .box-type-2 {
+          &:nth-child(2) {
+            width: 40%;
+            left: -20px;
+            img {
+              left: 72px;
+            }
+          }
+          &:nth-child(4) {
+            right: -12px;
+          }
+        }
+      }
+    }
+  }
+  .customer-evaluates {
+    .evaluates {
+      .evaluate {
+        &:nth-child(2) {
+          .content {
+            .comment {
+              height: 56px;
+            }
+            .quotes-1,
+            .quotes-2 {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 280px) {
+  .introduce-page.two {
+    .content {
+      .details {
+        .box-type-2 {
+          &:nth-child(2) {
+            img {
+              left: 58px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

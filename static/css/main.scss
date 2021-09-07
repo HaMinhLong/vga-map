@@ -70,7 +70,7 @@ li {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 24px;
   color: $title1;
 }
@@ -86,12 +86,9 @@ li {
   font-weight: 500;
   overflow: hidden;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   height: 54px;
-}
-.recruitment-title {
-  height: 84px;
 }
 .article-title:hover,
 .recruitment-title:hover {
@@ -161,6 +158,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    .logo-page-mobile {
+      display: none;
+    }
     .navigation {
       li {
         list-style: none;
@@ -184,6 +184,10 @@ header {
       }
     }
     .locate {
+      img {
+        width: 41px;
+        height: 28px;
+      }
       span {
         margin-left: 8px;
         color: $white;
@@ -193,11 +197,15 @@ header {
 }
 .banner-home {
   position: relative;
+  top: 20px;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 20px);
   .image-banner {
     width: 100%;
     height: 100%;
+  }
+  .image-banner-mobile {
+    display: none;
   }
   .la-ban {
     position: absolute;
@@ -213,7 +221,10 @@ header {
     position: absolute;
     right: 130px;
     bottom: 30px;
-    overflow: hidden;
+    > img {
+      width: 100%;
+      height: 100%;
+    }
     .box {
       position: absolute;
       top: 28px;
@@ -247,11 +258,14 @@ header {
       }
     }
   }
+  .button-group {
+    display: none;
+  }
 }
 .introduce-home {
   margin-top: 64px;
   .features {
-    margin-top: 19px;
+    margin-top: 36px;
     .feature {
       .image-box {
         width: 180px;
@@ -270,6 +284,11 @@ header {
 }
 .benefits-maps {
   margin-top: 64px;
+  .image-box {
+    .title-type-1 {
+      display: none;
+    }
+  }
   .content {
     .title-type-1 {
       line-height: 42px;
@@ -548,6 +567,7 @@ footer {
       .row {
         margin-top: 24px;
         img {
+          height: 50px;
           padding-left: 0px;
         }
       }
@@ -567,6 +587,9 @@ footer {
       }
       .descriptions {
         margin-top: 26px;
+      }
+      .descriptions.mobile {
+        display: none;
       }
       .details {
         position: relative;
@@ -677,6 +700,9 @@ footer {
           margin-top: 8px;
           text-align: justify;
         }
+        img {
+          display: none;
+        }
         &:nth-child(2) {
           position: absolute;
           top: 76px;
@@ -705,6 +731,7 @@ footer {
             background: #7638cf;
             top: -10px;
             left: 50%;
+            transform: translatex(-50%);
           }
           .circle-icon::after {
             top: -27px;
@@ -736,10 +763,18 @@ footer {
         }
       }
     }
+    .details-mobile {
+      display: none;
+    }
   }
 }
 .contact-page {
+  .image-box {
+    width: 100%;
+    height: 636px;
+  }
   form {
+    height: 636px;
     background: $white;
     box-shadow: 0px 4px 20px rgba(79, 88, 170, 0.4);
     border-radius: 10px;
@@ -780,6 +815,9 @@ footer {
     .image-box {
       height: 225px;
       padding: 0px 15px;
+      img {
+        border-radius: 40px;
+      }
     }
     .content {
       margin-top: 11px;
@@ -812,6 +850,16 @@ footer {
     }
     .articles {
       margin-top: 36px;
+    }
+  }
+}
+.article-details-page {
+  .article-descriptions {
+    padding: 0px 15px;
+  }
+  .related-articles {
+    .title-type-1 {
+      padding-left: 15px;
     }
   }
 }
@@ -854,7 +902,6 @@ footer {
       border-radius: 20px;
       padding: 23px 28px;
       min-height: 215px;
-
       > img {
         position: absolute;
         right: 25px;

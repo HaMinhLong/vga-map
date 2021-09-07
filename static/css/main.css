@@ -50,7 +50,7 @@ li {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 24px;
   color: #00abfd;
 }
@@ -68,13 +68,9 @@ li {
   font-weight: 500;
   overflow: hidden;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   height: 54px;
-}
-
-.recruitment-title {
-  height: 84px;
 }
 
 .article-title:hover,
@@ -152,6 +148,9 @@ header .navigation-locate-box {
   align-items: center;
   justify-content: flex-end;
 }
+header .navigation-locate-box .logo-page-mobile {
+  display: none;
+}
 header .navigation-locate-box .navigation li {
   list-style: none;
   margin-right: 64px;
@@ -170,6 +169,10 @@ header .navigation-locate-box .navigation li a {
 header .navigation-locate-box .navigation li.active a {
   font-weight: 700;
 }
+header .navigation-locate-box .locate img {
+  width: 41px;
+  height: 28px;
+}
 header .navigation-locate-box .locate span {
   margin-left: 8px;
   color: #fff;
@@ -177,12 +180,16 @@ header .navigation-locate-box .locate span {
 
 .banner-home {
   position: relative;
+  top: 20px;
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 20px);
 }
 .banner-home .image-banner {
   width: 100%;
   height: 100%;
+}
+.banner-home .image-banner-mobile {
+  display: none;
 }
 .banner-home .la-ban {
   position: absolute;
@@ -198,7 +205,10 @@ header .navigation-locate-box .locate span {
   position: absolute;
   right: 130px;
   bottom: 30px;
-  overflow: hidden;
+}
+.banner-home .phone-banner > img {
+  width: 100%;
+  height: 100%;
 }
 .banner-home .phone-banner .box {
   position: absolute;
@@ -232,12 +242,15 @@ header .navigation-locate-box .locate span {
 .banner-home .phone-banner .box .box-image.decrement {
   left: calc(50% + 30px);
 }
+.banner-home .button-group {
+  display: none;
+}
 
 .introduce-home {
   margin-top: 64px;
 }
 .introduce-home .features {
-  margin-top: 19px;
+  margin-top: 36px;
 }
 .introduce-home .features .feature .image-box {
   width: 180px;
@@ -254,6 +267,9 @@ header .navigation-locate-box .locate span {
 
 .benefits-maps {
   margin-top: 64px;
+}
+.benefits-maps .image-box .title-type-1 {
+  display: none;
 }
 .benefits-maps .content .title-type-1 {
   line-height: 42px;
@@ -531,6 +547,7 @@ footer .more-information .link .row {
   margin-top: 24px;
 }
 footer .more-information .link .row img {
+  height: 50px;
   padding-left: 0px;
 }
 footer .more-information .install-link {
@@ -542,6 +559,9 @@ footer .more-information .install-link {
 }
 .introduce-page .company-introduce .content .descriptions {
   margin-top: 26px;
+}
+.introduce-page .company-introduce .content .descriptions.mobile {
+  display: none;
 }
 .introduce-page .company-introduce .content .details {
   position: relative;
@@ -652,6 +672,9 @@ footer .more-information .install-link {
   margin-top: 8px;
   text-align: justify;
 }
+.introduce-page.two .content .details .box-type-2 img {
+  display: none;
+}
 .introduce-page.two .content .details .box-type-2:nth-child(2) {
   position: absolute;
   top: 76px;
@@ -681,6 +704,7 @@ footer .more-information .install-link {
   background: #7638cf;
   top: -10px;
   left: 50%;
+  transform: translatex(-50%);
 }
 .introduce-page.two .content .details .box-type-2:nth-child(3) .circle-icon::after {
   top: -27px;
@@ -709,8 +733,16 @@ footer .more-information .install-link {
   top: 5px;
   left: -50px;
 }
+.introduce-page.two .content .details-mobile {
+  display: none;
+}
 
+.contact-page .image-box {
+  width: 100%;
+  height: 636px;
+}
 .contact-page form {
+  height: 636px;
   background: #fff;
   box-shadow: 0px 4px 20px rgba(79, 88, 170, 0.4);
   border-radius: 10px;
@@ -756,6 +788,12 @@ footer .more-information .install-link {
   height: 225px;
   padding: 0px 15px;
 }
+.articles .article .image-box img,
+.articles .recruitment .image-box img,
+.recruitment-box .article .image-box img,
+.recruitment-box .recruitment .image-box img {
+  border-radius: 40px;
+}
 .articles .article .content,
 .articles .recruitment .content,
 .recruitment-box .article .content,
@@ -799,6 +837,13 @@ footer .more-information .install-link {
 }
 .article-details-page .related-articles .articles {
   margin-top: 36px;
+}
+
+.article-details-page .article-descriptions {
+  padding: 0px 15px;
+}
+.article-details-page .related-articles .title-type-1 {
+  padding-left: 15px;
 }
 
 .recruitment-page .recruitment-box .recruitment .content .date-v2 p {
